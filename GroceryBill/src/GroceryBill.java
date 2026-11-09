@@ -29,16 +29,15 @@ public class GroceryBill {
 
 			double monthTotal = (groceryWeekone1 + groceryWeektwo1 + groceryWeekthree1 + groceryWeekfour1);
 			
-			System.out.println ("Your monthly grocery bill total without the coupon is $" + monthTotal);
+			System.out.printf("Your monthly grocery bill total without the coupon is $%.2f%n",monthTotal);
 			
-			System.out.println ("Your average weekly grocery bill without the coupon is $" +
-			monthTotal/4);
+			System.out.printf("Your average weekly grocery bill without the coupon is $%.2f%n",monthTotal/4);
 			
 			double deductCoupon = (monthTotal*(1-decimalCoupon)); 
 			
-			System.out.println ("Your average monthly grocery bill with the coupon is $" + deductCoupon);
+			System.out.printf("Your monthly grocery bill with the coupon is $%.2f%n",deductCoupon);
 			
-			System.out.println ("Your average weekly grocery bill with the coupon is $" + deductCoupon/4);
+			System.out.printf("Your average weekly grocery bill with the coupon is $%.2f%n",deductCoupon/4);
 			
 		}
 		
